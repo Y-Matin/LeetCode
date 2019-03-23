@@ -4,6 +4,13 @@
             "type": "java",
             "name": "CodeLens (Launch) - Test",
             "request": "launch",
+            "mainClass": "test.Test",
+            "projectName": "LeetCode"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Test",
+            "request": "launch",
             "mainClass": "main.Test",
             "projectName": "LeetCode"
         }

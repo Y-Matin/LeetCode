@@ -39,8 +39,32 @@
  */
 class Solution {
     public int reverse(int x) {
+        StringBuilder sb = new StringBuilder();
+        int y = Math.abs(x);
+        for(int yu =0,count=0 ,shang =y; shang>0;)
+        {
+            yu = shang%10;
+            if(count==0)
+            {
+                if (yu>0)
+                    sb.append(yu);
+            }
+            else
+            sb.append(yu);
+            count++;
+            shang = shang/10;
 
-        return 0;
+        }
+        int result=0;
+        if (!"".equals(sb.toString())) {
+            result= Integer.parseInt(sb.toString());
+        }
+         
+        if(x<0)
+            result *=-1;
+        // System.out.println(result);
+        return result;
     }
 }
 
+// 
